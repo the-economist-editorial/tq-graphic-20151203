@@ -8,8 +8,8 @@ import { Im, parseNumerics, connectMap }
 import colours from './econ_colours.js';
 
 import Header from './header.js';
-import ToggleBarRaw from './toggle-bar.js';
 import ChartContainer from './chart-container.js';
+import LineChart from './column-chart.js';
 
 import chroma from 'chroma-js';
 
@@ -26,6 +26,9 @@ class Chart extends ChartContainer {
     return(
       <div className='chart-container'>
         <Header title="To come" subtitle="Also to come"/>
+        <svg width="595" height="300">
+        <LineChart />
+        </svg>
       </div>
     );
   }
